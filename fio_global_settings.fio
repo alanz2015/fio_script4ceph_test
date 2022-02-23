@@ -1,0 +1,16 @@
+[global]
+ioengine=rbd
+clientname=admin
+pool=cephrbd_data
+rbdname=rbd01
+direct=1
+thread
+group_reporting
+iodepth=16
+runtime=30
+bs=4K
+size=128M 
+rwmixread=70
+lockmem=1G
+time_based
+norandommap

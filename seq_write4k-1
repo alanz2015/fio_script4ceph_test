@@ -1,0 +1,17 @@
+[global]
+ioengine=rbd
+clientname=admin
+pool=cephrbd_data
+rbdname=rbd01
+direct=1
+thread
+group_reporting
+iodepth=16
+runtime=10
+bs=4K
+per_job_logs=1
+
+[seq-write-4k]
+numjobs=16
+size=512M
+rw=write
